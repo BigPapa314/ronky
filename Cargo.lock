@@ -2465,6 +2465,7 @@ dependencies = [
 name = "ronky-demo"
 version = "0.1.0"
 dependencies = [
+ "bevy",
  "ronky",
 ]
 
