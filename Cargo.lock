@@ -2459,6 +2459,15 @@ name = "ronky"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "ronky-view",
+ "ronky-window",
+]
+
+[[package]]
+name = "ronky-components"
+version = "0.1.0"
+dependencies = [
+ "bevy",
 ]
 
 [[package]]
@@ -2467,6 +2476,28 @@ version = "0.1.0"
 dependencies = [
  "bevy",
  "ronky",
+]
+
+[[package]]
+name = "ronky-view"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+ "ronky-view-label",
+]
+
+[[package]]
+name = "ronky-view-label"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+]
+
+[[package]]
+name = "ronky-window"
+version = "0.1.0"
+dependencies = [
+ "bevy",
 ]
 
 [[package]]

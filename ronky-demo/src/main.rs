@@ -1,5 +1,7 @@
 use bevy::prelude::*;
 
+use ronky::prelude::*;
+
 #[derive(Component)]
 struct Person;
 
@@ -13,7 +15,8 @@ pub struct HelloPlugin;
 
 impl Plugin for HelloPlugin {
     fn build(&self, app: &mut App) {
-        app.insert_resource(GreetTimer(Timer::from_seconds(2.0, TimerMode::Repeating)))
+        app.add_plugin(window::Configuration)
+            .insert_resource(GreetTimer(Timer::from_seconds(2.0, TimerMode::Repeating)))
             .add_startup_system(add_people)
             .add_system(greet_people);
     }

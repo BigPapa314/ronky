@@ -1,8 +1,10 @@
 use bevy::prelude::*;
 
+pub mod prelude;
+
 pub fn run<T: Plugin>(configuration: T) {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugin(ronky_view::ViewPlugin)
         .add_startup_system(setup)
         .add_plugin(configuration)
         .run();

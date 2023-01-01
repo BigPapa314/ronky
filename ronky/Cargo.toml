@@ -7,6 +7,8 @@ edition = "2021"
 
 [dependencies]
 bevy = "0.9"
+ronky-window = { path = "../ronky-window" }
+ronky-view = { path = "../view/ronky-view" }
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]
