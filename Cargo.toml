@@ -3,8 +3,11 @@ resolver = "2" # Important! wgpu/Bevy needs this!
 members = [
     "ronky",
     "ronky-components",
+    "ronky-resources",
     "ronky-demo",
     "ronky-window",
+    "sensor/ronky-sensor",
+    "sensor/ronky-sensor-date-time",
     "view/ronky-view",
     "view/ronky-view-label"
 ]

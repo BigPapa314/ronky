@@ -11,11 +11,14 @@ struct Name(String);
 #[derive(Resource)]
 struct GreetTimer(Timer);
 
+struct LocalTime;
+
 pub struct HelloPlugin;
 
 impl Plugin for HelloPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugin(window::Configuration)
+            .add_plugin(sensor::DateTime::<LocalTime>::new())
             .insert_resource(GreetTimer(Timer::from_seconds(2.0, TimerMode::Repeating)))
             .add_startup_system(add_people)
             .add_system(greet_people);

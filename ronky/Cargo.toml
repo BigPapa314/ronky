@@ -9,6 +9,7 @@ edition = "2021"
 bevy = "0.9"
 ronky-window = { path = "../ronky-window" }
 ronky-view = { path = "../view/ronky-view" }
+ronky-sensor = { path = "../sensor/ronky-sensor" }
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]

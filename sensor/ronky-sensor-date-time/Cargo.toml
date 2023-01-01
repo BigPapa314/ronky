@@ -1,5 +1,5 @@
 [package]
-name = "ronky-components"
+name = "ronky-sensor-date-time"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 bevy = "0.9"
 chrono = "0.4.23"
+ronky-components = { path = "../../ronky-components" }
+ronky-resources = { path = "../../ronky-resources" }

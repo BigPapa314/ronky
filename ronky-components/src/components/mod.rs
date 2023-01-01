@@ -1,5 +1,9 @@
 use bevy::prelude::*;
 
+mod date_time;
+
+pub use date_time::DateTime;
+
 #[derive(Component)]
 pub struct Position {
     pub x: f32,
@@ -8,6 +12,9 @@ pub struct Position {
 
 #[derive(Component)]
 pub struct Name(String);
+
+#[derive(Component)]
+pub struct SensorText(pub String);
 
 #[derive(Component)]
 pub enum Unit {
